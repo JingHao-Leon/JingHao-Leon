@@ -10,7 +10,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/JingHao-Leon/JingHao-Leon)](https://github.com/JingHao-Leon/JingHao-Leon/commits/main)
 [![License](https://img.shields.io/github/license/JingHao-Leon/JingHao-Leon)](LICENSE)
 
-[![求职中 · AI 应用开发工程师 @ 西安](https://img.shields.io/badge/%F0%9F%93%AE%20%E6%B1%82%E8%81%8C%E4%B8%AD%20%C2%B7%20AI%20%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%20%40%20%E8%A5%BF%E5%AE%89-1f5fa8?style=for-the-badge)](https://github.com/JingHao-Leon)
+[![🤖 AI 应用开发工程师 · 专注 Agent 与 GEO](https://img.shields.io/badge/%F0%9F%A4%96%20AI%20%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%20%C2%B7%20%E4%B8%93%E6%B3%A8%20Agent%20%E4%B8%8E%20GEO-1f5fa8?style=for-the-badge)](https://github.com/JingHao-Leon)
 
 </div>
 
