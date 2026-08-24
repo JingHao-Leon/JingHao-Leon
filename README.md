@@ -4,7 +4,7 @@
 
 **AI Application Engineer · 西安电子科技大学 · Agent / RAG / 多模态 AI**
 
-正在寻找 **西安 · AI 应用开发工程师** 岗位 —— 关注云产品性能工程，以及面向工程工作流的 AI 工具链。
+
 
 [![GitHub followers](https://img.shields.io/github/followers/JingHao-Leon?label=Followers)](https://github.com/JingHao-Leon?tab=followers)
 [![Last Commit](https://img.shields.io/github/last-commit/JingHao-Leon/JingHao-Leon)](https://github.com/JingHao-Leon/JingHao-Leon/commits/main)
