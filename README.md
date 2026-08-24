@@ -112,7 +112,6 @@ mindmap
 | 项目 | 技术栈 | 亮点 |
 |---|---|---|
 | [**geo-research-cn**](https://github.com/JingHao-Leon/geo-research-cn) | 真实浏览器实测 · 静态报告站 | 12 题 × 6 国产 AI 引擎 GEO 引用行为实测研究（[在线报告](https://jinghao-leon.github.io/geo-research-cn/)） |
-| [**kaoyan-chongcijun**](https://github.com/JingHao-Leon/kaoyan-chongcijun) | 静态站 · 每日更新 | 考研 408/数学一/英语一免费复习资料站（zehaowang.xin） |
 | [**badminton-court-booking**](https://github.com/JingHao-Leon/badminton-court-booking) | Flask · MySQL · SQLAlchemy | 8 表 + 触发器 + 3 角色 + 25+ 页面 + 600+ 种子数据 |
 | [**wechat-toolkit-miniprogram**](https://github.com/JingHao-Leon/wechat-toolkit-miniprogram) | 微信小程序 · WXML/WXSS | 语音打卡、chatBot、agent-ui 组件集 |
 | [**thu-stock-forecast-2026**](https://github.com/JingHao-Leon/thu-stock-forecast-2026) | 时序特征 · LightGBM/LSTM | 清华大数据挑战赛 2026 股票预测管线 |
