@@ -25,7 +25,7 @@
 <td width="50%">
 
 ### 🚀 [llm-perf-lab](https://github.com/JingHao-Leon/llm-perf-lab)
-LLM 推理性能实验场。**RTX 3090 实测**：KV Cache 在 4K 上下文 **179 倍**解码加速、SDPA 融合内核 14.7x、INT8 量化误差 0.83%。KV Cache / attention 三实现 / NF4 量化 / Triton 内核，73+ 测试锁数值一致性。
+LLM 推理性能实验场。**RTX 3090 实测**：KV Cache 在 4K 上下文 **179 倍**解码加速、SDPA 融合内核 14.7x、INT8 量化误差 0.83%。KV Cache / attention 三实现 / NF4 量化 / Triton 内核，14 个测试锁数值一致性。
 
 </td>
 <td width="50%">
