@@ -2,7 +2,7 @@
 
 # 你好，我是 JingHao 👋
 
-**AI Application Engineer · 西安电子科技大学 · Agent / RAG / 多模态 AI**
+**AI Application Engineer · 西安电子科技大学 · Agent / RAG / 推理优化 / 模型微调**
 
 
 
@@ -10,17 +10,31 @@
 [![Last Commit](https://img.shields.io/github/last-commit/JingHao-Leon/JingHao-Leon)](https://github.com/JingHao-Leon/JingHao-Leon/commits/main)
 [![License](https://img.shields.io/github/license/JingHao-Leon/JingHao-Leon)](LICENSE)
 
-[![🤖 AI 应用开发工程师 · 专注 Agent 与 GEO](https://img.shields.io/badge/%F0%9F%A4%96%20AI%20%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%20%C2%B7%20%E4%B8%93%E6%B3%A8%20Agent%20%E4%B8%8E%20GEO-1f5fa8?style=for-the-badge)](https://github.com/JingHao-Leon)
+[![🤖 AI 应用开发工程师 · 端到端交付](https://img.shields.io/badge/%F0%9F%A4%96%20AI%20%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%20%C2%B7%20%E7%AB%AF%E5%88%B0%E7%AB%AF%E4%BA%A4%E4%BB%98-1f5fa8?style=for-the-badge)](https://github.com/JingHao-Leon)
 
 </div>
 
 ---
 
-一个把想法快速做成可用产品的工程师：从 **语音 Agent 电话接入** 到 **浏览器扩展**，从 **YOLO 机械臂分拣** 到 **RAG 法律助手**，习惯端到端地把「模型能力 → 工程管线 → 可交互界面」整条链路跑通。下面 6 个是我在 GitHub 置顶的代表作。
+一个把想法快速做成可用产品的工程师：从 **语音 Agent 电话接入** 到 **CUDA 推理优化**，从 **QLoRA 模型微调** 到 **多 Agent 框架**，习惯端到端地把「模型能力 → 工程管线 → 可验证数据」整条链路跑通。下面 6 个是我在 GitHub 置顶的代表作，**每个项目都有跑通的测试与实测数据**。
 
 ## 🎯 置顶代表作
 
 <table>
+<tr>
+<td width="50%">
+
+### 🚀 [llm-perf-lab](https://github.com/JingHao-Leon/llm-perf-lab)
+LLM 推理性能实验场。**RTX 3090 实测**：KV Cache 在 4K 上下文 **179 倍**解码加速、SDPA 融合内核 14.7x、INT8 量化误差 0.83%。KV Cache / attention 三实现 / NF4 量化 / Triton 内核，73+ 测试锁数值一致性。
+
+</td>
+<td width="50%">
+
+### 🎯 [lora-lab](https://github.com/JingHao-Leon/lora-lab)
+从零实现 LoRA/QLoRA/SFT。**Qwen2.5-1.5B 真模型微调：验证损失 -29.4%，3090 上 15.3 分钟**。自研 NF4 存储、prompt 掩码管线、150 行训练器，CPU 实测 LoRA 以 9.85% 参数胜过全参微调。
+
+</td>
+</tr>
 <tr>
 <td width="50%">
 
@@ -30,36 +44,22 @@
 </td>
 <td width="50%">
 
-### 🗣️ [dialect-asr-v2](https://github.com/JingHao-Leon/dialect-asr-v2)
-方言语音识别与纠偏。**7 大方言家族 + 30 种语言**，Fun-ASR 1.5 + Qwen 方言→普通话归一化，零样本方言检测，FastAPI 服务，约 1s 延迟。
+### 🕸️ [agent-mesh](https://github.com/JingHao-Leon/agent-mesh)
+~700 行多 Agent 框架：类型化工具调用（类型注解自动生成 JSON Schema）、Swarm handoff 路由、map-reduce 团队、护栏管道、滑动窗口记忆。全部行为由确定性 MockLLM 测试锁定，零网络依赖。
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 📈 [TrendRadar](https://github.com/JingHao-Leon/TrendRadar)
-跨平台热点聚合 + 情感趋势分析。30 秒完成多平台热榜抓取，SnowNLP 情感分析 + Ollama 本地摘要，130 → 126 事件去重，一键产出 ECharts HTML 报告（另有 [Windows 打包版](https://github.com/JingHao-Leon/TrendRadar-Windows)）。
+### 🔍 [rag-forge](https://github.com/JingHao-Leon/rag-forge)
+混合检索 RAG 引擎。BM25 × 稠密双路 + RRF 融合 + MMR 重排，自带标注数据集评测（Recall/MRR/nDCG），**500 次随机 fuzz 验证分块算法零字符丢失**。零模型下载即可运行。
 
 </td>
 <td width="50%">
 
-### 😊 [emotion-tracker](https://github.com/JingHao-Leon/emotion-tracker)
-社交平台情绪追踪系统。**多平台评论采集 + AI 情绪分类 + 定时监控**，自动生成情绪简报——从爬虫到分析到报表的完整闭环。
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 📚 [study-flashcards](https://github.com/JingHao-Leon/study-flashcards)
-本地可运行的速记卡/题库练习系统：多题库、目录检索、错题与进度追踪，内置 **SQL 在线判题** 和 **C++ 在线编译运行**，外加聊天学习助手。
-
-</td>
-<td width="50%">
-
-### 📄 [pdf-ai-sidebar](https://github.com/JingHao-Leon/pdf-ai-sidebar)
-浏览器扩展（Manifest V3）：PDF 阅读时框选段落，AI 基于**全文 + 选段**上下文解释，支持多 Agent 切换与多轮对话。
+### 🛡️ [llm-gateway](https://github.com/JingHao-Leon/llm-gateway)
+OpenAI 兼容多供应商网关：优先级路由、故障转移、熔断器、LRU 响应缓存、令牌桶限流、Prometheus 指标。16 个集成测试锁定「上游 500 → 0.2s 内切到备选」等真实故障行为。
 
 </td>
 </tr>
@@ -70,65 +70,62 @@
 ```mermaid
 mindmap
   root(("JingHao · AI 应用工程师"))
-    Agent
+    Agent 系统
       语音 Agent（ASR→LLM→TTS 全链路）
-      视频换人 Agent（场景检测→换形象→动作迁移）
-      工具调用 / Function Calling
-    RAG
-      法律知识库问答
-      本地语料课程助手
-      ChromaDB / BGE Embedding
-    多模态应用
-      9 模块统一平台（对话/图像/视频/语音）
-      PDF 选段解释扩展
-      多平台舆情聚合分析
-    视觉与机器人
-      YOLOv5/v8 检测
-      ROS / MoveIt 机械臂
-      Grad-CAM 可解释性
+      多 Agent 框架 / 工具调用 / handoff
+      dsh 投研工作台（34 ⭐）
+    RAG 检索
+      BM25 × 稠密混合检索 + RRF 融合
+      法律知识库问答 / 课程助手
+      检索评测（Recall / MRR / nDCG）
+    推理优化与微调
+      KV Cache / SDPA / 量化（INT8 · NF4）
+      Triton 融合算子
+      LoRA / QLoRA 真模型微调
+    LLM 应用工程
+      OpenAI 兼容网关（故障转移 / 限流）
+      MCP 服务器 / 浏览器扩展
+      多模态应用平台
 ```
 
 ## 🗂 更多项目
 
-### 🧠 RAG / Agent
+### 🧠 RAG / Agent / LLM 工具
 
 | 项目 | 技术栈 | 亮点 |
 |---|---|---|
-| [**legal-assistant-agent**](https://github.com/JingHao-Leon/legal-assistant-agent) | LangChain · RAG · 中文法律语料 | 工具调用 Agent，中文法律知识库问答 |
-| [**ai-intro-rag-assistant**](https://github.com/JingHao-Leon/ai-intro-rag-assistant) | DeepSeek · BGE · ChromaDB | 本地语料 RAG + 端到端评测，AI 导论课程设计 |
-| [**swap-agent**](https://github.com/JingHao-Leon/swap-agent) | GPT Image-2 · 可灵 Motion Control | 端到端视频换人：场景检测 → 换形象 → 动作迁移 → 时间轴拼接 |
-| [**ai-multimodal-platform**](https://github.com/JingHao-Leon/ai-multimodal-platform) | Streamlit · DashScope · ChromaDB | 9 个模块统一在 OpenAI 兼容客户端下，RAG + 6 种模态 |
+| [**dsh-alpha-desk**](https://github.com/JingHao-Leon/dsh-alpha-desk) ⭐34 | Python · ai-hedge-fund · 风控 | AI 投研工作台：多策略回测 + 风险闸门 + 定时监控 |
+| [**dialect-asr-v2**](https://github.com/JingHao-Leon/dialect-asr-v2) | Fun-ASR 1.5 · Qwen · FastAPI | 7 大方言家族 + 30 种语言，方言→普通话归一化，零样本检测 |
+| [**legal-assistant-agent**](https://github.com/JingHao-Leon/legal-assistant-agent) | LangChain · RAG | 工具调用 Agent，中文法律知识库问答 |
+| [**ai-multimodal-platform**](https://github.com/JingHao-Leon/ai-multimodal-platform) | Streamlit · DashScope | 9 模块统一平台：对话 / RAG / 图像 / 视频 / 语音 |
+| [**mcp-server-template**](https://github.com/JingHao-Leon/mcp-server-template) | TypeScript · MCP | 开箱即用的 MCP 服务器模板：tools/resources/prompts |
+| [**deepseek-harness-guide**](https://github.com/JingHao-Leon/deepseek-harness-guide) ⭐5 | 教程 | dsh 保姆级教程 + 与 LangGraph/OpenAI Agents SDK 对比 |
+| [**ai-intro-rag-assistant**](https://github.com/JingHao-Leon/ai-intro-rag-assistant) | DeepSeek · BGE · ChromaDB | 本地语料 RAG + 端到端评测 |
 
-### 🦾 视觉与机器人
-
-| 项目 | 技术栈 | 亮点 |
-|---|---|---|
-| [**robotic-arm-sorting-system**](https://github.com/JingHao-Leon/robotic-arm-sorting-system) | YOLOv5 · MoveIt · ROS · RealSense | 六自由度视觉分拣，98% 抓取成功率，7s 节拍，eye-in-hand 标定，8h 连续运行 |
-| [**tomato-leaf-disease-detection**](https://github.com/JingHao-Leon/tomato-leaf-disease-detection) | YOLOv8 · PyTorch · Grad-CAM | 自建数据集 + 训练管线，端到端病害分类与可解释性可视化 |
-| [**ros-turtle-race**](https://github.com/JingHao-Leon/ros-turtle-race) | ROS Noetic · Gazebo · RViz | 多节点协同，遥控 + 自主双模式仿真竞速 |
-
-### 📱 应用与工具
+### 📱 应用与内容
 
 | 项目 | 技术栈 | 亮点 |
 |---|---|---|
-| [**geo-research-cn**](https://github.com/JingHao-Leon/geo-research-cn) | 真实浏览器实测 · 静态报告站 | 12 题 × 6 国产 AI 引擎 GEO 引用行为实测研究（[在线报告](https://jinghao-leon.github.io/geo-research-cn/)） |
-| [**badminton-court-booking**](https://github.com/JingHao-Leon/badminton-court-booking) | Flask · MySQL · SQLAlchemy | 8 表 + 触发器 + 3 角色 + 25+ 页面 + 600+ 种子数据 |
-| [**wechat-toolkit-miniprogram**](https://github.com/JingHao-Leon/wechat-toolkit-miniprogram) | 微信小程序 · WXML/WXSS | 语音打卡、chatBot、agent-ui 组件集 |
-| [**thu-stock-forecast-2026**](https://github.com/JingHao-Leon/thu-stock-forecast-2026) | 时序特征 · LightGBM/LSTM | 清华大数据挑战赛 2026 股票预测管线 |
-| [**polymarket-tracker**](https://github.com/JingHao-Leon/polymarket-tracker) | Python · 数据可视化 | Polymarket 预测市场概率变化追踪 |
+| [**study-flashcards**](https://github.com/JingHao-Leon/study-flashcards) ⭐81 | JS · 本地后端 | 速记卡系统：SQL 在线判题 + C++ 在线编译 + 聊天助手 |
+| [**TrendRadar**](https://github.com/JingHao-Leon/TrendRadar) | Python · 情感分析 | 跨平台热点聚合 + 趋势报告（另有 Windows 打包版） |
+| [**pdf-ai-sidebar**](https://github.com/JingHao-Leon/pdf-ai-sidebar) | Manifest V3 | PDF 框选段落，全文+选段 AI 解释，多轮对话 |
+| [**geo-research-cn**](https://github.com/JingHao-Leon/geo-research-cn) | 实测研究 · 静态站 | 12 题 × 6 国产 AI 引擎 GEO 引用行为实测（[在线报告](https://jinghao-leon.github.io/geo-research-cn/)） |
+| [**geo-book**](https://github.com/JingHao-Leon/geo-book) ⭐3 | mdBook | 六大国产 AI 引擎实测写成的 GEO 中文实战手册 |
+| [**opencato**](https://github.com/JingHao-Leon/opencato) | 企微机器人 | 住在企业微信里的 AI 提醒猫：定时提醒/番茄钟/LLM 陪伴 |
 
 > 全部仓库见 [Repositories](https://github.com/JingHao-Leon?tab=repositories)（另整理了一份 [Agent 学习笔记与书单](https://github.com/JingHao-Leon/agent-learning-notes)）。
 
 ## 🛠 技能栈
 
-**AI 应用** · LangGraph · Claude Code · RAG · Prompt 工程 · 多模态 API 编排 · 智能体工具调用
-**算法** · PyTorch · YOLOv5/YOLOv8 · BERT/BiLSTM · LoRA 微调 · ROS/MoveIt
-**工程** · Python · C++ · FastAPI · Flask · MySQL · Streamlit · Git · Docker（基础）
+**LLM 应用** · Agent 编排 · 工具调用 · MCP · RAG（混合检索 / 重排 / 评测）· Prompt 工程 · 多模态 API 编排
+**推理与训练** · PyTorch · CUDA 基准（KV Cache / SDPA / 量化）· Triton · LoRA / QLoRA 微调 · transformers / PEFT / bitsandbytes
+**工程** · Python · TypeScript · FastAPI · httpx · MySQL · SQLite · Docker · GitHub Actions · ROS/MoveIt
 
 ## 🔬 关于项目里的数字
 
-- 「98% 抓取成功率」「25 秒访客卡」「1s 延迟」等指标来自**课程/个人项目的自测环境**（固定数据集、本地或单实例部署），代表功能验证结果，未经过生产级压测。
-- 所有项目代码、依赖与运行方式均公开在对应仓库，欢迎点开验证或提 Issue 交流。
+- 「179 倍 KV Cache 加速」「Qwen2.5-1.5B 验证损失 -29.4%」等指标来自 **RTX 3090 实测**（脚本与原始数据随仓库发布，`benchmarks/results/` 可直接复现）。
+- 「25 秒访客卡」等指标来自**个人项目自测环境**（固定数据集、本地或单实例部署），代表功能验证结果，未经过生产级压测。
+- 所有项目代码、依赖、测试与运行方式均公开在对应仓库，欢迎点开验证或提 Issue 交流。
 
 ---
 
@@ -144,7 +141,7 @@ Phone: `159****0000`
 
 <div align="center">
 <sub>
-西安电子科技大学 · AI Application Engineer · Agent / RAG / 多模态<br>
+西安电子科技大学 · AI Application Engineer · Agent / RAG / 推理优化 / 模型微调<br>
 如果我的项目对你有帮助，欢迎 ⭐ Star 或邮件交流
 </sub>
 </div>
