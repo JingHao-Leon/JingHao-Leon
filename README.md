@@ -63,6 +63,14 @@ OpenAI 兼容多供应商网关：优先级路由、故障转移、熔断器、L
 
 </td>
 </tr>
+<tr>
+<td colspan="2">
+
+### 🖼️ [vision-lab](https://github.com/JingHao-Leon/vision-lab)
+ViT 与 DDPM **从零实现**（不看 timm/diffusers）：CIFAR-10 训练 **83.52%**（4.77M 参数，18.5 分钟），DDPM 12 epoch 直接采样出可辨手写数字。闭式前向过程等 9 个数学性质测试锁实现正确性。
+
+</td>
+</tr>
 </table>
 
 ## 🧭 技术方向
@@ -119,11 +127,12 @@ mindmap
 
 **LLM 应用** · Agent 编排 · 工具调用 · MCP · RAG（混合检索 / 重排 / 评测）· Prompt 工程 · 多模态 API 编排
 **推理与训练** · PyTorch · CUDA 基准（KV Cache / SDPA / 量化）· Triton · LoRA / QLoRA 微调 · transformers / PEFT / bitsandbytes
+**视觉/生成** · ViT · DDPM · Grad-CAM · 数据增广（RandAugment/RandomErasing）
 **工程** · Python · TypeScript · FastAPI · httpx · MySQL · SQLite · Docker · GitHub Actions · ROS/MoveIt
 
 ## 🔬 关于项目里的数字
 
-- 「179 倍 KV Cache 加速」「Qwen2.5-1.5B 验证损失 -29.4%」等指标来自 **RTX 3090 实测**（脚本与原始数据随仓库发布，`benchmarks/results/` 可直接复现）。
+- 「179 倍 KV Cache 加速」「Qwen 1.5B/7B 验证损失 -29.4%/-48.7%」「ViT 83.52%」「hybrid 检索 MRR@10=1.000」等指标来自 **RTX 3090 实测**（脚本与原始数据随各仓库发布，可直接复现）。
 - 「25 秒访客卡」等指标来自**个人项目自测环境**（固定数据集、本地或单实例部署），代表功能验证结果，未经过生产级压测。
 - 所有项目代码、依赖、测试与运行方式均公开在对应仓库，欢迎点开验证或提 Issue 交流。
 
