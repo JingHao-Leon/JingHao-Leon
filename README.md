@@ -16,7 +16,7 @@
 
 ---
 
-一个把想法快速做成可用产品的工程师：从 **语音 Agent 电话接入** 到 **CUDA 推理优化**，从 **QLoRA 模型微调** 到 **多 Agent 框架**，习惯端到端地把「模型能力 → 工程管线 → 可验证数据」整条链路跑通。下面 9 个是我在 GitHub 置顶的代表作，**每个项目都有跑通的测试与实测数据**。
+一个把想法快速做成可用产品的工程师：从 **语音 Agent 电话接入** 到 **CUDA 推理优化**，从 **QLoRA 模型微调** 到 **多 Agent 框架**，习惯端到端地把「模型能力 → 工程管线 → 可验证数据」整条链路跑通。下面 10 个是我在 GitHub 置顶的代表作，**每个项目都有跑通的测试与实测数据**。
 
 ## 🎯 置顶代表作
 
@@ -84,6 +84,14 @@ ViT 与 DDPM **从零实现**（不看 timm/diffusers）：CIFAR-10 训练 **83.
 
 ### 🛰 [x-radar](https://github.com/JingHao-Leon/x-radar)
 X(Twitter) 博主推文监控台：**免 API Key、不登录不暴露账号**——官方 syndication 数据源轮询、匿名 embed 截图（请求头零 Cookie 由自动化测试断言）、推文引用的外链网页自动截图+正文抽取、AI 中文摘要（Kimi 等 OpenAI 兼容接口，无 Key 降级规则摘要）、Chrome 插件实时推送 + 桌面通知。**回测：NASA 时间线 20/20 检出、重叠回放 0 重复**，23 项测试全绿（FastAPI + Playwright + SSE，含回测脚本一条命令复现）。
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+### 🧭 [awesome-jev-apps](https://github.com/JingHao-Leon/awesome-jev-apps)
+Jev（TypeSafe AI System One 决策模型，2026-09-15 发布）生态的中文精选清单：**98 条条目全部一手核验**（GitHub star 逐个 API 验真、外链逐条探活），收录标准「有趣优先」——从 20.1k★ 的浏览器 agent 到让 Jev 玩宝可梦、判 Reddit AITA 的玩法实验。自带一致性校验脚本与 CI 链接巡检，**每晚 0 点自动快照维护**：调研新条目 → 刷新 star → 校验 → 推送盯 CI，全程无人值守。
 
 </td>
 </tr>
