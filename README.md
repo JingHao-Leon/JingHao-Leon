@@ -105,7 +105,7 @@ mindmap
     Agent 系统
       语音 Agent（ASR→LLM→TTS 全链路）
       多 Agent 框架 / 工具调用 / handoff
-      dsh 投研工作台（34 ⭐）
+      dsh 投研工作台（181 ⭐）
     RAG 检索
       BM25 × 稠密混合检索 + RRF 融合
       法律知识库问答 / 课程助手
@@ -127,12 +127,12 @@ mindmap
 
 | 项目 | 技术栈 | 亮点 |
 |---|---|---|
-| [**dsh-alpha-desk**](https://github.com/JingHao-Leon/dsh-alpha-desk) ⭐34 | Python · ai-hedge-fund · 风控 | AI 投研工作台：多策略回测 + 风险闸门 + 定时监控 |
+| [**dsh-alpha-desk**](https://github.com/JingHao-Leon/dsh-alpha-desk) ⭐181 | Python · ai-hedge-fund · 风控 | AI 投研工作台：多策略回测 + 风险闸门 + 定时监控 |
 | [**dialect-asr-v2**](https://github.com/JingHao-Leon/dialect-asr-v2) | Fun-ASR 1.5 · Qwen · FastAPI | 7 大方言家族 + 30 种语言，方言→普通话归一化，零样本检测 |
 | [**legal-assistant-agent**](https://github.com/JingHao-Leon/legal-assistant-agent) | LangChain · RAG | 工具调用 Agent，中文法律知识库问答 |
 | [**ai-multimodal-platform**](https://github.com/JingHao-Leon/ai-multimodal-platform) | Streamlit · DashScope | 9 模块统一平台：对话 / RAG / 图像 / 视频 / 语音 |
 | [**mcp-server-template**](https://github.com/JingHao-Leon/mcp-server-template) | TypeScript · MCP | 开箱即用的 MCP 服务器模板：tools/resources/prompts |
-| [**deepseek-harness-guide**](https://github.com/JingHao-Leon/deepseek-harness-guide) ⭐5 | 教程 | dsh 保姆级教程 + 与 LangGraph/OpenAI Agents SDK 对比 |
+| [**deepseek-harness-guide**](https://github.com/JingHao-Leon/deepseek-harness-guide) ⭐6 | 教程 | dsh 保姆级教程 + 与 LangGraph/OpenAI Agents SDK 对比 |
 | [**ai-intro-rag-assistant**](https://github.com/JingHao-Leon/ai-intro-rag-assistant) | DeepSeek · BGE · ChromaDB | 本地语料 RAG + 端到端评测 |
 
 ### 📱 应用与内容
@@ -140,7 +140,7 @@ mindmap
 | 项目 | 技术栈 | 亮点 |
 |---|---|---|
 | [**study-flashcards**](https://github.com/JingHao-Leon/study-flashcards) ⭐81 | JS · 本地后端 | 速记卡系统：SQL 在线判题 + C++ 在线编译 + 聊天助手 |
-| [**TrendRadar**](https://github.com/JingHao-Leon/TrendRadar) | Python · 情感分析 | 跨平台热点聚合 + 趋势报告（另有 Windows 打包版） |
+| [**TrendRadar**](https://github.com/JingHao-Leon/TrendRadar) ⭐54 | Python · 情感分析 | 跨平台热点聚合 + 趋势报告（另有 Windows 打包版） |
 | [**pdf-ai-sidebar**](https://github.com/JingHao-Leon/pdf-ai-sidebar) | Manifest V3 | PDF 框选段落，全文+选段 AI 解释，多轮对话 |
 | [**geo-research-cn**](https://github.com/JingHao-Leon/geo-research-cn) | 实测研究 · 静态站 | 12 题 × 6 国产 AI 引擎 GEO 引用行为实测（[在线报告](https://jinghao-leon.github.io/geo-research-cn/)） |
 | [**geo-book**](https://github.com/JingHao-Leon/geo-book) ⭐3 | mdBook | 六大国产 AI 引擎实测写成的 GEO 中文实战手册 |
