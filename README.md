@@ -99,7 +99,7 @@ Jev（TypeSafe AI System One 决策模型，2026-09-15 发布）生态的中文�
 <td colspan="2">
 
 ### 🧬 [erp-spec-forge](https://github.com/JingHao-Leon/erp-spec-forge)
-Spec 驱动的 ERP 设计库：把模块/实体/权限/单据状态机写成 **YAML 单一事实源**，一条命令生成 **MySQL DDL（46 表）、OpenAPI 3.1（92 路径 / 230 操作）、242 功能码 × 9 角色 RBAC 矩阵**与数据字典；内置 8 领域 46 实体的生鲜供应链示例规格，**26 项测试全绿**，规格校验门禁 + 规格→产物永不漂移。
+Spec 驱动的 ERP 设计库：把模块/实体/权限/单据状态机写成 **YAML 单一事实源**，一条命令生成 **MySQL DDL（46 表）、OpenAPI 3.1（92 路径 / 230 操作）、242 功能码 × 9 角色 RBAC 矩阵**与数据字典；内置 8 领域 46 实体的生鲜供应链示例规格与 `lockable`/`auditable` 领域约定开关，**33 项测试全绿**，另沉淀两套真实系统授权逆向的模式文档（领域模式 / API 同构 / 安全加固清单，已匿名化）。
 
 </td>
 </tr>
